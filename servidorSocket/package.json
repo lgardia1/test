@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "socket.io": "^4.8.1"
+  },
+  "scripts": {
+    "init": "node index.js"
+  },
+  "type": "module"
+}

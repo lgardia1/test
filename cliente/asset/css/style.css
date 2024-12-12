@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 2rem;
+}
+
+.drag-container {
+    height: 50vh;
+    display: flex;
+    gap: 2rem;
+}
+
+.naipes-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.naipes-container > * {
+    flex: 0 1 90px;
+    height: 150px;
+}
+
+.corazones-container {
+    flex: 1;
+    display: flex;
+    border: 1px solid red;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.corazones-container > * {
+    flex: 0 1 90px;
+    height: 150px;
+}
+
+/* Cards container */
+
+.cards-container {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 2rem;
+}
+
+.cards-container > * {
+    flex: 0 1 150px;
+    height: 200px;
+}
+
+.naipes {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/naipe.png);
+}
+
+.corazones {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+    background-image: url(../img/coraznones.png);
+}
